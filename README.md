@@ -76,7 +76,7 @@ similarity_sorted = fusion.similarity_sort(individual_results=unique_results, si
 
 ### frequency sort
 The results are sorted based on the number of occurences and their ranks.
-Each result gets a score assigned which is the log(results_per_prompt - position + 1)
+Each result gets a score assigned which is the log(results_per_prompt - position + 1) / log(results_per_prompt)
 
 ### similarity sort
 All the results are compared against each other. The distances are added onto their scores and the one with the smallest score is chosen as the most relevant.
