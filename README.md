@@ -61,7 +61,7 @@ prompts.append(prompt)
 Now you can search for the most relevant articles.
 ```python
 
-search_res = fusion.search_for_querries(texts=titles, querries=prompts, m=results_per_prompt, embeddings=embeddings, model=embedding_model)
+search_res = fusion.search_for_querries(texts=titles, querries=prompts, m=results_per_prompt, text_embeddings=embeddings, model=embedding_model)
 #returns a List[List[str]]. A list for each querry
 
 ```
