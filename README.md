@@ -17,6 +17,7 @@ Recommended for prompt generation: `llama3`
 Recommended for embedding: `mxbai-embed-large`
 
 You will also need to install **[Faiss](https://github.com/facebookresearch/faiss/blob/main/INSTALL.md)**
+
 with conda:
 ```
 conda install -c pytorch faiss-cpu=1.9.0
