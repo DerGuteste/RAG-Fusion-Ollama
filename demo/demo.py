@@ -121,7 +121,7 @@ print("-> generate prompts ...")
 prompts = spice.spice_up(model="llama3", prompt=search_querry, count=prompt_count)
 prompts.append(search_querry)
 
-search_res = fusion.search_for_querries(texts=titles, querries=prompts, m=results_per_prompt, embeddings=embeddings, model=embedding_model)
+search_res = fusion.search_for_querries(texts=titles, querries=prompts, m=results_per_prompt, text_embeddings=embeddings, model=embedding_model)
 default_arr = search_res[-1]
 
 results_list = fusion.frequency_sort(search_results=search_res)
